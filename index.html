@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aqsa ❤️ Usaied</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#001f54,#003f88,#5dade2);
+color:white;
+overflow-x:hidden;
+scroll-behavior:smooth;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+}
+
+h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.hero{
+position:relative;
+}
+
+.subtitle{
+font-size:1.4rem;
+max-width:700px;
+}
+
+.btn{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+border-radius:50px;
+font-size:18px;
+cursor:pointer;
+background:white;
+color:#003f88;
+font-weight:bold;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+width:90%;
+max-width:1200px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 0 20px rgba(255,255,255,.4);
+}
+
+.card{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:20px;
+max-width:800px;
+line-height:1.8;
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:25px;
+animation:rise linear forwards;
+pointer-events:none;
+}
+
+@keyframes rise{
+to{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+.counter{
+font-size:2rem;
+font-weight:bold;
+}
+
+#surpriseBox{
+display:none;
+margin-top:30px;
+}
+
+.fireworks{
+font-size:60px;
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.2);
+}
+}
+
+.hiddenMessage{
+margin-top:20px;
+font-size:22px;
+}
+
+audio{
+position:fixed;
+top:10px;
+right:10px;
+z-index:999;
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+
+<h1>💙 Aqsa & Usaied 💙</h1>
+
+<p class="subtitle">
+365 Days • Countless Memories • One Beautiful Story
+</p>
+
+<button class="btn" onclick="startWebsite()">
+Open Our Story ❤️
+</button>
+
+</section>
+
+<section id="story">
+
+<h2>🌙 How It Started</h2>
+
+<div class="card">
+
+June 14th.
+
+A simple Instagram conversation started.
+
+Neither of us knew that one message would turn into one year of beautiful memories.
+
+And here we are today...
+
+Celebrating our first anniversary together. ❤️
+
+</div>
+
+</section>
+
+<section>
+
+<section>
+
+<h2>💙 My Favorite Picture</h2>
+
+<img src="special.jpg"
+style="
+width:320px;
+max-width:90%;
+border-radius:25px;
+box-shadow:0 0 30px rgba(255,255,255,.5);
+margin-bottom:30px;
+">
+
+<div class="card">
+
+This picture will always be special to me.
+
+Because this wasn't just another photo.
+
+It was our first video call.
+
+A moment that I had been looking forward to, a moment that turned our conversations into something even more real.
+
+When I look at this picture, I remember the excitement, the happiness, and the smile I couldn't hide.
+
+Who would have thought that a simple Instagram conversation on June 14th would lead to moments like this?
+
+This photo reminds me of how far we've come, how many memories we've created, and how lucky I am to have you in my life.
+
+If I could relive one moment again and again, this would definitely be one of them.
+
+💙
+
+</div>
+
+<p style="margin-top:25px;font-size:24px;">
+✨ The first video call, the beginning of countless beautiful memories. ✨
+</p>
+
+</section>
+
+<h2>📸 Our Memories</h2>
+
+<div class="gallery">
+
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.png">
+<img src="photo7.png">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>🕋 My Favorite Memory</h2>
+
+<div class="card">
+
+Of all the memories we have shared,
+
+my favorite will always be our nights talking in Makkah.
+
+While the world slept,
+
+we shared conversations that I will always cherish.
+
+💙
+
+</div>
+
+</section>
+
+<section>
+
+<h2>💌 Reasons I Love You</h2>
+
+<div class="card">
+
+💙 Your smile<br><br>
+
+💙 Your kindness<br><br>
+
+💙 You understand me<br><br>
+
+💙 You are my best friend<br><br>
+
+💙 You make me happy<br><br>
+
+💙 You make every day special
+
+</div>
+
+</section>
+
+<section>
+
+<h2>⏳ Time Together</h2>
+
+<div id="counter" class="counter"></div>
+
+</section>
+
+<section>
+
+<h2>💖 A Letter To Aqsa</h2>
+
+<div class="card">
+
+Dear Aqsa,
+
+<br><br>
+
+One year ago a simple Instagram message changed everything.
+
+Thank you for every conversation, every smile and every memory.
+
+Thank you for being my best friend and one of the most special people in my life.
+
+Our memories together, especially our nights talking in Makkah, will always remain close to my heart.
+
+Happy 1st Anniversary.
+
+💙
+
+Love,
+
+<br>
+
+Usaied
+
+</div>
+
+<button class="btn" onclick="showSurprise()">
+🎁 One Last Surprise
+</button>
+
+<div id="surpriseBox">
+
+<div class="fireworks">
+🎆 🎇 🎆
+</div>
+
+<div class="hiddenMessage">
+
+Aqsa,
+
+Thank you for making this year beautiful.
+
+I hope this is only the beginning of many more memories together.
+
+❤️
+
+</div>
+
+<br>
+
+<button class="btn" onclick="playVoice()">
+🎙️ Listen To My Message
+</button>
+
+</div>
+
+</section>
+
+<audio id="welcomeVoice">
+<source src="welcome.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="voice">
+<source src="voice1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="voice2">
+<source src="voice2.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+window.onload = function(){
+
+const welcomeVoice =
+document.getElementById("welcomeVoice");
+
+welcomeVoice.play().catch(() => {
+console.log("Browser blocked autoplay");
+});
+
+}
+
+function startWebsite(){
+
+const welcomeVoice =
+document.getElementById("welcomeVoice");
+
+const bgMusic =
+document.getElementById("bgMusic");
+
+welcomeVoice.currentTime = 0;
+
+welcomeVoice.play();
+
+welcomeVoice.onended = function(){
+
+bgMusic.play();
+
+document.getElementById("story")
+.scrollIntoView({
+behavior:'smooth'
+});
+
+};
+
+}
+
+
+
+const startDate = new Date("June 14, 2025");
+
+function updateCounter(){
+
+const now = new Date();
+
+const diff = now - startDate;
+
+const days = Math.floor(diff/(1000*60*60*24));
+const hours = Math.floor(diff/(1000*60*60));
+const minutes = Math.floor(diff/(1000*60));
+
+document.getElementById("counter").innerHTML =
+days + " Days ❤️<br>" +
+hours + " Hours ❤️<br>" +
+minutes + " Minutes ❤️";
+
+}
+
+setInterval(updateCounter,1000);
+
+updateCounter();
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="💙";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(Math.random()*4+4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,300);
+
+function showSurprise(){
+
+document.getElementById("surpriseBox").style.display="block";
+
+for(let i=0;i<100;i++){
+setTimeout(createHeart,i*50);
+}
+
+}
+
+function playVoice(){
+
+const bgMusic = document.getElementById("bgMusic");
+
+const voice1 = document.getElementById("voice");
+const voice2 = document.getElementById("voice2");
+
+bgMusic.pause();
+
+voice1.currentTime = 0;
+voice2.currentTime = 0;
+
+voice1.play();
+
+voice1.onended = function(){
+
+voice2.play();
+
+};
+
+voice2.onended = function(){
+
+bgMusic.play();
+
+};
+
+}
+
+
+</script>
+
+</body>
+</html>
